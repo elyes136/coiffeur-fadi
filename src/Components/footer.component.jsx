@@ -11,7 +11,7 @@ const Footer = () => {
       <div className="footer-container">
         {/* Brand */}
         <div className="footer-section">
-          <h2 className="footer-logo">Fadi Studio</h2>
+          <h2 className="footer-logo">Salon Fadi</h2>
           <p className="footer-text">
             Salon de coiffure moderne et élégant à votre service.
           </p>
@@ -81,7 +81,7 @@ const Footer = () => {
 
       {/* Bottom */}
       <div className="footer-bottom">
-        <p>© {new Date().getFullYear()} Fadi Studio. Tous droits réservés.</p>
+        <p>© {new Date().getFullYear()} Salon Fadi. Tous droits réservés.</p>
       </div>
     </footer>
   );

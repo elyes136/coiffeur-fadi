@@ -53,18 +53,14 @@ const Header = () => {
         <NavLink
           to="/"
           onClick={() => setOpen(false)}
-          className={({ isActive }) =>
-            isActive ? "nav-link active" : "nav-link"
-          }
+          className={({ isActive }) => (isActive ? "nav-link" : "nav-link")}
         >
           Réservation
         </NavLink>
         <NavLink
           to="/#horaires"
           onClick={() => setOpen(false)}
-          className={({ isActive }) =>
-            isActive ? "nav-link active" : "nav-link"
-          }
+          className={({ isActive }) => (isActive ? "nav-link" : "nav-link")}
         >
           Nos Horaires
         </NavLink>
@@ -72,9 +68,7 @@ const Header = () => {
         <NavLink
           to="/#contact"
           onClick={() => setOpen(false)}
-          className={({ isActive }) =>
-            isActive ? "nav-link active" : "nav-link"
-          }
+          className={({ isActive }) => (isActive ? "nav-link" : "nav-link")}
         >
           Contact
         </NavLink>
