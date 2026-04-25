@@ -1,0 +1,108 @@
+.services-page {
+  padding: 1.6rem 1.4rem;
+  background: #f2f2f2;
+  border-color: #d8d8d8;
+  border-radius: 10px;
+  box-shadow: none;
+}
+
+.services-menu {
+  max-width: 980px;
+  margin: 0 auto;
+}
+
+.services-title {
+  margin: 0 0 0.8rem;
+  text-align: center;
+  font-family: var(--font-body);
+  font-size: 1.95rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: #111111;
+}
+
+.services-list {
+  border-top: 1px dotted #b8b8b8;
+}
+
+.service-row {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 160px;
+  gap: 1rem;
+  align-items: center;
+  padding: 0.7rem 0;
+  border-bottom: 1px dotted #b8b8b8;
+}
+
+.service-actions {
+  width: 100%;
+  display: grid;
+  grid-template-columns: minmax(72px, 1fr) auto;
+  align-items: center;
+  gap: 0.45rem;
+  justify-self: end;
+}
+
+.service-name {
+  margin: 0;
+  font-family: var(--font-body);
+  font-size: 1.06rem;
+  font-weight: 500;
+  color: #1f1f1f;
+}
+
+.service-description {
+  margin: 0.18rem 0 0;
+  font-family: var(--font-body);
+  font-size: 0.88rem;
+  color: #4a4a4a;
+}
+
+.service-price {
+  margin: 0;
+  font-family: var(--font-body);
+  font-size: 1.05rem;
+  font-weight: 500;
+  color: #1f1f1f;
+  text-align: right;
+  font-variant-numeric: tabular-nums;
+  white-space: nowrap;
+}
+
+@media (max-width: 760px) {
+  .services-page {
+    padding: 1.1rem 1rem;
+  }
+
+  .services-title {
+    font-size: 1.35rem;
+  }
+
+  .service-row {
+    grid-template-columns: minmax(0, 1fr) 136px;
+    gap: 0.6rem;
+  }
+
+  .service-actions {
+    grid-template-columns: minmax(64px, 1fr) auto;
+    gap: 0.35rem;
+  }
+
+  .service-name {
+    font-size: 0.98rem;
+  }
+
+  .service-description {
+    font-size: 0.8rem;
+  }
+
+  .service-price {
+    font-size: 0.96rem;
+  }
+
+  .service-book-btn {
+    font-size: 0.68rem;
+    padding: 0.2rem 0.45rem;
+  }
+}

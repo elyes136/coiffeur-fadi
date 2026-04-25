@@ -1,0 +1,89 @@
+.horaires-page {
+  display: flex;
+  justify-content: center;
+  padding: 60px 20px;
+}
+
+.horaires-container {
+  width: 100%;
+  max-width: 500px;
+  background: #ffffff;
+  border-radius: 18px;
+  padding: 30px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+  text-align: center;
+}
+
+/* Header */
+.horaires-header h2 {
+  font-size: 28px;
+  font-weight: 700;
+  margin-bottom: 20px;
+  letter-spacing: 1px;
+  color: #222;
+  position: relative;
+}
+
+.horaires-header h2::after {
+  content: "";
+  width: 60px;
+  height: 3px;
+  background: #000;
+  display: block;
+  margin: 10px auto 0;
+  border-radius: 2px;
+}
+
+/* List container */
+.horaires {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+/* Each row */
+.horaire-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 12px 16px;
+  border-radius: 10px;
+  background: #f7f7f7;
+
+  transition: 0.2s ease;
+}
+
+/* Day text */
+.day {
+  font-weight: 600;
+  color: #222;
+}
+
+/* Time text */
+.time {
+  color: #555;
+  font-weight: 500;
+}
+
+/* Hover effect */
+.horaire-row:hover {
+  background: #000;
+  transform: translateX(4px);
+}
+
+.horaire-row:hover .day,
+.horaire-row:hover .time {
+  color: #fff;
+}
+
+/* Special case: Sunday (closed) */
+.horaire-row:first-child {
+  background: #111;
+}
+
+.horaire-row:first-child .day,
+.horaire-row:first-child .time {
+  color: #fff;
+  font-weight: 600;
+}
