@@ -77,6 +77,7 @@ The production files will be generated in the `build` directory.
 ```text
 coiffeur-fadi/
 ├── public/
+├── screenshots/
 ├── src/
 │   ├── components/
 │   ├── ...
